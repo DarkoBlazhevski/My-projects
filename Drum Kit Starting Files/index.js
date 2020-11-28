@@ -2,7 +2,7 @@ var drumNumber = document.querySelectorAll(".drum").length;
 
 for (i = 0; i < drumNumber; i++) {
 
-  document.querySelectorAll(".drum")[i].addEventListener("click", function() {
+  document.querySelectorAll(".drum")[i].addEventListener("click", function () {
 
     var buttonInnerHTML = this.innerHTML;
 
@@ -13,7 +13,7 @@ for (i = 0; i < drumNumber; i++) {
   });
 }
 
-document.addEventListener("keypress", function(event) {
+document.addEventListener("keypress", function (event) {
   makeSound(event.key);
 
   buttonAnimation(event.key);
@@ -66,7 +66,7 @@ function buttonAnimation(currentKey) {
 
   activeButton.classList.add("pressed");
 
-  setTimeout(function() {
+  setTimeout(function () {
     activeButton.classList.remove("pressed");
   }, 100);
 }
